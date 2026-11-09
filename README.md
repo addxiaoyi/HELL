@@ -7,7 +7,7 @@ HelL 启动器插件公共目录。此仓库当前提供声明式启动页插件
 进入「插件 → 市场源」，使用：
 
 ```text
-https://raw.githubusercontent.com/addxiaoyi/HELL/main/market/catalog.json
+https://raw.githubusercontent.com/addxiaoyi/HELL/refs/heads/main/market/catalog.json
 ```
 
 当前提供桌面时钟、冒险手记、Minecraft 百科和服务器手册。安装后到「启动页 → 编辑布局 → 模块库」添加。插件支持停用、更新和卸载，启动页保存的内容会保留。
@@ -17,6 +17,8 @@ https://raw.githubusercontent.com/addxiaoyi/HELL/main/market/catalog.json
 ![冒险手记实际模块](plugins/world-journal/assets/main-light.png)
 
 市场目录的每个包都有 SHA-256，启动器会检查包哈希、插件标识和版本。GitHub 无法访问时可下载 `market/*.hellplugin` 后从启动器本地导入。
+
+新版启动器会将此前保存的官方 `/main/market/catalog.json` 地址迁移到上面的完整分支地址。第三方目录不受影响。下载暂存于插件安装目录，系统临时目录不可写时仍可安装。
 
 ## 提交 / 更新插件
 
