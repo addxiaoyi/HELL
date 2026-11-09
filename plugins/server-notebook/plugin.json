@@ -1,0 +1,22 @@
+{
+  "apiVersion": 1,
+  "id": "server-notebook",
+  "name": "服务器手册",
+  "version": "1.0.0",
+  "author": "HelL 示例",
+  "description": "在启动页记录服务器地址、版本和集合坐标，并快速查看中文百科。",
+  "modules": [
+    {
+      "id": "notes",
+      "title": "联机备忘",
+      "kind": "notes",
+      "settings": { "text": "服务器地址：\n游戏版本：\n集合坐标：\n\n联机计划\n" }
+    },
+    {
+      "id": "wiki",
+      "title": "中文百科",
+      "kind": "links",
+      "settings": { "label": "打开 Minecraft Wiki", "url": "https://zh.minecraft.wiki/" }
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "version": 1,
+  "plugins": [
+    {
+      "manifest": {
+        "apiVersion": 1,
+        "id": "desk-clock",
+        "name": "桌面时钟",
+        "version": "1.0.0",
+        "author": "HelL",
+        "description": "简洁的时间与日期，可切换 12 / 24 小时制。",
+        "modules": [
+          {
+            "id": "main",
+            "title": "桌面时钟",
+            "kind": "clock",
+            "settings": {}
+          }
+        ]
+      },
+      "packageUrl": "https://raw.githubusercontent.com/addxiaoyi/HELL/main/market/desk-clock-1.0.0.hellplugin",
+      "sha256": "3fc48c4990738c42d8e2d14a5b3f58e4d10ce542a968e24b1eee4494f0c12ea8"
+    },
+    {
+      "manifest": {
+        "apiVersion": 1,
+        "id": "minecraft-wiki",
+        "name": "Minecraft 百科",
+        "version": "1.0.0",
+        "author": "HelL",
+        "description": "从启动页直接打开中文 Minecraft Wiki。",
+        "modules": [
+          {
+            "id": "main",
+            "title": "Minecraft 百科",
+            "kind": "links",
+            "settings": {
+              "label": "中文 Minecraft Wiki",
+              "url": "https://zh.minecraft.wiki/"
+            }
+          }
+        ]
+      },
+      "packageUrl": "https://raw.githubusercontent.com/addxiaoyi/HELL/main/market/minecraft-wiki-1.0.0.hellplugin",
+      "sha256": "175bf54217fc5e34231374ad1bcb30d33c9dcf35e3ac6feb82a2a9ffcf569706"
+    },
+    {
+      "manifest": {
+        "apiVersion": 1,
+        "id": "server-notebook",
+        "name": "服务器手册",
+        "version": "1.0.0",
+        "author": "HelL 示例",
+        "description": "在启动页记录服务器地址、版本和集合坐标，并快速查看中文百科。",
+        "modules": [
+          {
+            "id": "notes",
+            "title": "联机备忘",
+            "kind": "notes",
+            "settings": {
+              "text": "服务器地址：\n游戏版本：\n集合坐标：\n\n联机计划\n"
+            }
+          },
+          {
+            "id": "wiki",
+            "title": "中文百科",
+            "kind": "links",
+            "settings": {
+              "label": "打开 Minecraft Wiki",
+              "url": "https://zh.minecraft.wiki/"
+            }
+          }
+        ]
+      },
+      "packageUrl": "https://raw.githubusercontent.com/addxiaoyi/HELL/main/market/server-notebook-1.0.0.hellplugin",
+      "sha256": "ffdf9c38795b657242eb2239440187bb7040be863de2b5f86994705f7e32360c"
+    },
+    {
+      "manifest": {
+        "apiVersion": 1,
+        "id": "world-journal",
+        "name": "冒险手记",
+        "version": "1.0.0",
+        "author": "HelL",
+        "description": "为不同世界分别记录坐标、计划和探索笔记。",
+        "modules": [
+          {
+            "id": "main",
+            "title": "冒险手记",
+            "kind": "notes",
+            "settings": {
+              "text": "世界：\n基地坐标：\n\n下一次冒险\n"
+            }
+          }
+        ]
+      },
+      "packageUrl": "https://raw.githubusercontent.com/addxiaoyi/HELL/main/market/world-journal-1.0.0.hellplugin",
+      "sha256": "d399715593d930f78a3a9c63c7e84346c5c49c45c1f9df4b634df5dabcc1a98c"
+    }
+  ]
+}

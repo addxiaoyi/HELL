@@ -1,0 +1,16 @@
+{
+  "apiVersion": 1,
+  "id": "desk-clock",
+  "name": "桌面时钟",
+  "version": "1.0.0",
+  "author": "HelL",
+  "description": "简洁的时间与日期，可切换 12 / 24 小时制。",
+  "modules": [
+    {
+      "id": "main",
+      "title": "桌面时钟",
+      "kind": "clock",
+      "settings": {}
+    }
+  ]
+}

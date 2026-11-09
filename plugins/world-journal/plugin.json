@@ -1,0 +1,18 @@
+{
+  "apiVersion": 1,
+  "id": "world-journal",
+  "name": "冒险手记",
+  "version": "1.0.0",
+  "author": "HelL",
+  "description": "为不同世界分别记录坐标、计划和探索笔记。",
+  "modules": [
+    {
+      "id": "main",
+      "title": "冒险手记",
+      "kind": "notes",
+      "settings": {
+        "text": "世界：\n基地坐标：\n\n下一次冒险\n"
+      }
+    }
+  ]
+}

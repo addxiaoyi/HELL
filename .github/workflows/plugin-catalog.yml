@@ -1,0 +1,29 @@
+name: Validate plugin catalog
+on:
+  push:
+    branches: [main]
+    paths: ['plugins/**', 'market/**', 'tools/**', '.github/workflows/plugin-catalog.yml']
+  pull_request:
+    paths: ['plugins/**', 'market/**', 'tools/**', '.github/workflows/plugin-catalog.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Test publisher
+        run: python tools/test_plugin_catalog.py
+      - name: Rebuild packages and catalog
+        run: python tools/build_plugin_catalog.py --source plugins --output market --base-url https://raw.githubusercontent.com/addxiaoyi/HELL/main/market
+      - name: Verify committed artifacts
+        run: git diff --exit-code -- market
+      - uses: actions/upload-artifact@v4
+        with:
+          name: verified-plugin-market
+          path: market/
+          if-no-files-found: error

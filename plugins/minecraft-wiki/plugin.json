@@ -1,0 +1,19 @@
+{
+  "apiVersion": 1,
+  "id": "minecraft-wiki",
+  "name": "Minecraft 百科",
+  "version": "1.0.0",
+  "author": "HelL",
+  "description": "从启动页直接打开中文 Minecraft Wiki。",
+  "modules": [
+    {
+      "id": "main",
+      "title": "Minecraft 百科",
+      "kind": "links",
+      "settings": {
+        "label": "中文 Minecraft Wiki",
+        "url": "https://zh.minecraft.wiki/"
+      }
+    }
+  ]
+}
