@@ -6,6 +6,7 @@ import hashlib
 import json
 import re
 import zipfile
+from datetime import datetime
 from pathlib import Path
 from urllib.parse import urlparse
 
@@ -36,6 +37,25 @@ def inspect_manifest(folder: Path) -> tuple[dict, list[Path]]:
         value = manifest.get(key, "")
         if not isinstance(value, str) or len(value) > limit or (required and not value.strip()):
             raise ValueError(f"{folder}: invalid {key}")
+    if manifest.get("homepage") and not valid_url(manifest["homepage"]):
+        raise ValueError(f"{folder}: homepage must use HTTPS")
+    screenshots = manifest.get("screenshots", [])
+    if not isinstance(screenshots, list) or len(screenshots) > 6:
+        raise ValueError(f"{folder}: expected at most 6 screenshots")
+    for screenshot in screenshots:
+        if not isinstance(screenshot, str):
+            raise ValueError(f"{folder}: invalid screenshot")
+        image = Path(screenshot)
+        if not screenshot.startswith("assets/") or "\\" in screenshot or ":" in screenshot or ".." in image.parts or image.suffix.lower() not in IMAGE_TYPES or not (folder / image).is_file():
+            raise ValueError(f"{folder}: invalid or missing screenshot")
+    releases = manifest.get("releases", [])
+    if not isinstance(releases, list) or len(releases) > 20:
+        raise ValueError(f"{folder}: expected at most 20 release notes")
+    for release in releases:
+        if not isinstance(release, dict) or not VERSION.fullmatch(release.get("version", "")) or not isinstance(release.get("notes"), str) or len(release["notes"]) > 4000:
+            raise ValueError(f"{folder}: invalid release notes")
+        if release.get("date"):
+            datetime.strptime(release["date"], "%Y-%m-%d")
     modules = manifest.get("modules", [])
     if not isinstance(modules, list) or not 1 <= len(modules) <= 20:
         raise ValueError(f"{folder}: expected 1-20 modules")

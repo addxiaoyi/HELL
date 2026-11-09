@@ -2,7 +2,7 @@
   "apiVersion": 1,
   "id": "world-journal",
   "name": "冒险手记",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "HelL",
   "description": "为不同世界分别记录坐标、计划和探索笔记。",
   "modules": [
@@ -13,6 +13,23 @@
       "settings": {
         "text": "世界：\n基地坐标：\n\n下一次冒险\n"
       }
+    }
+  ],
+  "homepage": "https://github.com/addxiaoyi/HELL",
+  "screenshots": [
+    "assets/main-light.png",
+    "assets/main-dark.png"
+  ],
+  "releases": [
+    {
+      "version": "1.1.0",
+      "date": "2026-11-09",
+      "notes": "新增实际模块的浅色、深色截图和插件详情；补充项目主页与版本说明。保留原模块标识和已有内容。"
+    },
+    {
+      "version": "1.0.0",
+      "date": "2026-11-09",
+      "notes": "首次发布，支持从公共目录安装到启动页。"
     }
   ]
 }

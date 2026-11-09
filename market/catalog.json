@@ -6,7 +6,7 @@
         "apiVersion": 1,
         "id": "desk-clock",
         "name": "桌面时钟",
-        "version": "1.0.0",
+        "version": "1.1.0",
         "author": "HelL",
         "description": "简洁的时间与日期，可切换 12 / 24 小时制。",
         "modules": [
@@ -16,17 +16,34 @@
             "kind": "clock",
             "settings": {}
           }
+        ],
+        "homepage": "https://github.com/addxiaoyi/HELL",
+        "screenshots": [
+          "assets/main-light.png",
+          "assets/main-dark.png"
+        ],
+        "releases": [
+          {
+            "version": "1.1.0",
+            "date": "2026-11-09",
+            "notes": "新增实际模块的浅色、深色截图和插件详情；补充项目主页与版本说明。保留原模块标识和已有内容。"
+          },
+          {
+            "version": "1.0.0",
+            "date": "2026-11-09",
+            "notes": "首次发布，支持从公共目录安装到启动页。"
+          }
         ]
       },
-      "packageUrl": "https://raw.githubusercontent.com/addxiaoyi/HELL/main/market/desk-clock-1.0.0.hellplugin",
-      "sha256": "3fc48c4990738c42d8e2d14a5b3f58e4d10ce542a968e24b1eee4494f0c12ea8"
+      "packageUrl": "https://raw.githubusercontent.com/addxiaoyi/HELL/main/market/desk-clock-1.1.0.hellplugin",
+      "sha256": "981f04622851be6f751c0f794c0dc46b1fdbe835f16ac46ccc2ecf5b9187fd2d"
     },
     {
       "manifest": {
         "apiVersion": 1,
         "id": "minecraft-wiki",
         "name": "Minecraft 百科",
-        "version": "1.0.0",
+        "version": "1.1.0",
         "author": "HelL",
         "description": "从启动页直接打开中文 Minecraft Wiki。",
         "modules": [
@@ -39,17 +56,34 @@
               "url": "https://zh.minecraft.wiki/"
             }
           }
+        ],
+        "homepage": "https://github.com/addxiaoyi/HELL",
+        "screenshots": [
+          "assets/main-light.png",
+          "assets/main-dark.png"
+        ],
+        "releases": [
+          {
+            "version": "1.1.0",
+            "date": "2026-11-09",
+            "notes": "新增实际模块的浅色、深色截图和插件详情；补充项目主页与版本说明。保留原模块标识和已有内容。"
+          },
+          {
+            "version": "1.0.0",
+            "date": "2026-11-09",
+            "notes": "首次发布，支持从公共目录安装到启动页。"
+          }
         ]
       },
-      "packageUrl": "https://raw.githubusercontent.com/addxiaoyi/HELL/main/market/minecraft-wiki-1.0.0.hellplugin",
-      "sha256": "175bf54217fc5e34231374ad1bcb30d33c9dcf35e3ac6feb82a2a9ffcf569706"
+      "packageUrl": "https://raw.githubusercontent.com/addxiaoyi/HELL/main/market/minecraft-wiki-1.1.0.hellplugin",
+      "sha256": "1af64428ab0edf01add7a678803d34a97a9853d46a9349833bcc8a5a8a5f7c46"
     },
     {
       "manifest": {
         "apiVersion": 1,
         "id": "server-notebook",
         "name": "服务器手册",
-        "version": "1.0.0",
+        "version": "1.1.0",
         "author": "HelL 示例",
         "description": "在启动页记录服务器地址、版本和集合坐标，并快速查看中文百科。",
         "modules": [
@@ -70,17 +104,36 @@
               "url": "https://zh.minecraft.wiki/"
             }
           }
+        ],
+        "homepage": "https://github.com/addxiaoyi/HELL",
+        "screenshots": [
+          "assets/notes-light.png",
+          "assets/notes-dark.png",
+          "assets/wiki-light.png",
+          "assets/wiki-dark.png"
+        ],
+        "releases": [
+          {
+            "version": "1.1.0",
+            "date": "2026-11-09",
+            "notes": "新增实际模块的浅色、深色截图和插件详情；补充项目主页与版本说明。保留原模块标识和已有内容。"
+          },
+          {
+            "version": "1.0.0",
+            "date": "2026-11-09",
+            "notes": "首次发布，支持从公共目录安装到启动页。"
+          }
         ]
       },
-      "packageUrl": "https://raw.githubusercontent.com/addxiaoyi/HELL/main/market/server-notebook-1.0.0.hellplugin",
-      "sha256": "ffdf9c38795b657242eb2239440187bb7040be863de2b5f86994705f7e32360c"
+      "packageUrl": "https://raw.githubusercontent.com/addxiaoyi/HELL/main/market/server-notebook-1.1.0.hellplugin",
+      "sha256": "e38866d248e718db693fdbe3b4db2c610284c246eab24e47024eb990552860b8"
     },
     {
       "manifest": {
         "apiVersion": 1,
         "id": "world-journal",
         "name": "冒险手记",
-        "version": "1.0.0",
+        "version": "1.1.0",
         "author": "HelL",
         "description": "为不同世界分别记录坐标、计划和探索笔记。",
         "modules": [
@@ -92,10 +145,27 @@
               "text": "世界：\n基地坐标：\n\n下一次冒险\n"
             }
           }
+        ],
+        "homepage": "https://github.com/addxiaoyi/HELL",
+        "screenshots": [
+          "assets/main-light.png",
+          "assets/main-dark.png"
+        ],
+        "releases": [
+          {
+            "version": "1.1.0",
+            "date": "2026-11-09",
+            "notes": "新增实际模块的浅色、深色截图和插件详情；补充项目主页与版本说明。保留原模块标识和已有内容。"
+          },
+          {
+            "version": "1.0.0",
+            "date": "2026-11-09",
+            "notes": "首次发布，支持从公共目录安装到启动页。"
+          }
         ]
       },
-      "packageUrl": "https://raw.githubusercontent.com/addxiaoyi/HELL/main/market/world-journal-1.0.0.hellplugin",
-      "sha256": "d399715593d930f78a3a9c63c7e84346c5c49c45c1f9df4b634df5dabcc1a98c"
+      "packageUrl": "https://raw.githubusercontent.com/addxiaoyi/HELL/main/market/world-journal-1.1.0.hellplugin",
+      "sha256": "ce01cc103837971b3a9aa1b4649c9cc79445c9267c601e98b2655114a4e02f0c"
     }
   ]
 }

@@ -12,6 +12,10 @@ https://raw.githubusercontent.com/addxiaoyi/HELL/main/market/catalog.json
 
 当前提供桌面时钟、冒险手记、Minecraft 百科和服务器手册。安装后到「启动页 → 编辑布局 → 模块库」添加。插件支持停用、更新和卸载，启动页保存的内容会保留。
 
+四款插件的 1.1.0 版本新增详情页截图、项目主页和更新说明。截图直接来自 HelL 实际渲染的模块，包含浅色与深色效果；点击截图可放大。详情页需要包含插件图库功能的新版启动器，旧版仍可安装这些接口 v1 插件。
+
+![冒险手记实际模块](plugins/world-journal/assets/main-light.png)
+
 市场目录的每个包都有 SHA-256，启动器会检查包哈希、插件标识和版本。GitHub 无法访问时可下载 `market/*.hellplugin` 后从启动器本地导入。
 
 ## 提交 / 更新插件

@@ -63,6 +63,19 @@ class CatalogTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             build_catalog(self.root / "source", self.folder / "output", "https://plugins.example.org")
 
+    def test_screenshot_must_exist_inside_package(self):
+        for image in ("assets/missing.png", "../private.png"):
+            self.manifest["screenshots"] = [image]
+            self.write()
+            with self.assertRaises(ValueError):
+                self.build()
+
+    def test_release_notes_reject_invalid_date(self):
+        self.manifest["releases"] = [{"version": "1.1.0", "date": "2026-99-99", "notes": "Updated"}]
+        self.write()
+        with self.assertRaises(ValueError):
+            self.build()
+
 
 if __name__ == "__main__":
     unittest.main()
